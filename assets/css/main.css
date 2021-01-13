@@ -1907,7 +1907,6 @@ input[type="radio"]+label:before {
     white-space: nowrap;
 }
 
-
 .image.thumb:hover:after {
     opacity: 1.0;
 }
