@@ -9645,13 +9645,14 @@ div.alert a {
     position: fixed;
     top: 0;
     right: 0;
-    left: 0;
+    left: 35%;
     z-index: 1030
 }
 
 @media(max-width:991.98px) {
     .navbar {
-        height: 50px
+        height: 50px;
+        left: 0;
     }
     .navbar .navbar-nav-scroll {
         width: 100%;

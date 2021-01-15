@@ -5,9 +5,18 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" href="assets/css/main.css" />
+    <script src="assets/js/jquery.min.js "></script>
+    <script src="assets/js/jquery.poptrox.min.js "></script>
+    <script src="assets/js/browser.min.js "></script>
+    <script src="assets/js/breakpoints.min.js "></script>
+    <script src="assets/js/util.js "></script>
+    <script src="assets/js/main.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
-<body class="is-preload">
+<body class>
+
+
 
     <!-- Header -->
     <header id="header">
@@ -20,6 +29,47 @@
             </div>
         </div>
     </header>
+
+    <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
+        <div class=container>
+
+            <button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content
+                aria-controls=navbar aria-expanded=false aria-label="Toggle navigation">
+                <span>
+                    <i class="fas fa-bars"></i>
+                </span>
+            </button>
+            <div class="navbar-collapse main-menu-item collapse justify-content-start " id=navbar-content>
+                <ul class="navbar-nav d-md-inline-flex">
+                    <li class=nav-item>
+                        <a class=nav-link href="#work experience">
+                            <span>Experience</span>
+                        </a>
+                    </li>
+                    <li class=nav-item>
+                        <a class=nav-link href="#education">
+                            <span>Education</span>
+                        </a>
+                    </li>
+                    <li class=nav-item>
+                        <a class=nav-link href="#technical skills">
+                            <span>Skills</span>
+                        </a>
+                    </li>
+                    <li class=nav-item>
+                        <a class=nav-link href="#projects">
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li class=nav-item>
+                        <a class=nav-link href="#contact">
+                            <span>Contact</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
 
     <div id="main">
@@ -118,7 +168,7 @@
 
 
 
-        <section id="education ">
+        <section id="education">
             <header class="major">
                 <h2>EDUCATION</h2>
             </header>
@@ -173,7 +223,7 @@
                     <div style="display: grid;grid-template-columns: auto auto auto; width: 300px; padding-top: 24px;">
                         <div style="text-align: center;">
                             <div>
-                                <img src="./images/Languages/C++.png" width="80" height="91">
+                                <img src="./images/Languages/C.png" width="80" height="91">
                             </div>
                             <div style="text-align: center; ">
                                 <h4>C</h4>
@@ -307,7 +357,7 @@
         </section>
 
 
-        <section id="two">
+        <section id="projects">
             <h2>PROJECTS</h2>
             <div class="row">
                 <article class="col-6 col-12-xsmall work-item">
@@ -340,8 +390,8 @@
             </ul>
         </section>
 
-        <section id="get in touch">
-            <h2>GET IN TOUCH</h2>
+        <section id="contact">
+            <h2>CONTACT</h2>
             <p>If you want to know more about me, send me a message and we’ll be in touch as soon as possible.</p>
             <div class="row">
                 <div class="col-8 col-12-small">
@@ -374,7 +424,12 @@
                         </li>
                         <li>
                             <h3 class="icon solid fa-envelope"><span class="label">Email</span></h3>
-                            <a onclick="window.open('mailto:jmr_sultan@hotmail.com');">jmr_sultan@hotmail.com</a>
+                            <a href=""
+                                onclick="window.open('mailto:jmr_sultan@hotmail.com');">jmr_sultan@hotmail.com</a>
+                        </li>
+                        <li>
+                            <h3 class="icon solid fa-file-download"><span class="label">file-contract</span> </h3>
+                            <a href="/documents/CVENGLISH.pdf">Curriculum vitae</a>
                         </li>
                     </ul>
                 </div>
@@ -385,14 +440,6 @@
 
 
 
-
-    <!-- Scripts -->
-    <script src="assets/js/jquery.min.js "></script>
-    <script src="assets/js/jquery.poptrox.min.js "></script>
-    <script src="assets/js/browser.min.js "></script>
-    <script src="assets/js/breakpoints.min.js "></script>
-    <script src="assets/js/util.js "></script>
-    <script src="assets/js/main.js "></script>
 
 </body>
 
