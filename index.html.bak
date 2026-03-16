@@ -1,0 +1,193 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Jesús Molina Roldán | Embedded Software Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@400;500&display=swap');
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Inter', sans-serif; background-color: #020617; color: #e2e8f0; overflow-x: hidden; }
+        h1, h2, h3, h4 { font-family: 'Space Grotesk', sans-serif; }
+        section { scroll-margin-top: 100px; }
+        .glow-mesh {
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.15) 0, transparent 50%), 
+                radial-gradient(at 100% 100%, rgba(30, 64, 175, 0.15) 0, transparent 50%);
+        }
+        .glass-card {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.4s ease;
+        }
+        .glass-card:hover {
+            border-color: #38bdf8;
+            transform: translateY(-5px);
+        }
+        .nav-glass { background: rgba(2, 6, 23, 0.8); backdrop-filter: blur(8px); border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
+        .btn-primary { background: linear-gradient(135deg, #0ea5e9 0%, #2563eb 100%); transition: all 0.3s ease; }
+        .tech-pill { background: rgba(56, 189, 248, 0.1); color: #7dd3fc; border: 1px solid rgba(56, 189, 248, 0.2); }
+    </style>
+</head>
+
+<body class="glow-mesh antialiased text-left">
+
+    <nav class="fixed top-0 w-full z-50 nav-glass py-5">
+        <div class="max-w-6xl mx-auto px-6 flex justify-end items-center">
+            <div class="hidden md:flex items-center space-x-10">
+                <a href="#experience" class="text-sm font-medium hover:text-sky-400 transition tracking-wider uppercase">Experience</a>
+                <a href="#education" class="text-sm font-medium hover:text-sky-400 transition tracking-wider uppercase">Education</a>
+                <a href="#contact" class="px-5 py-2 bg-white text-black text-xs font-bold rounded-full hover:bg-sky-500 hover:text-white transition-all uppercase">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="min-h-screen flex flex-col justify-center items-center text-center px-6">
+        <div class="mb-8 p-1 rounded-3xl bg-gradient-to-tr from-sky-500 to-blue-800 shadow-2xl">
+            <img src="images/avatar.jpg" class="w-40 h-40 rounded-[22px] object-cover border-4 border-[#020617]" alt="Jesús Molina">
+        </div>
+        <h1 class="text-6xl md:text-8xl font-bold tracking-tighter text-white mb-4 uppercase italic">
+            Jesús Molina <span class="text-sky-500">Roldán</span>
+        </h1>
+        <p class="text-xl md:text-2xl text-slate-400 font-light max-w-3xl leading-relaxed mb-10 text-center text-pretty">
+            Embedded Software Engineer at <span class="text-white font-semibold border-b-2 border-sky-500">Giesecke+Devrient</span>. 
+            Focused on Embedded Architecture, Platform Evolution & CI Automation.
+        </p>
+        <div class="flex flex-wrap justify-center gap-5">
+            <a href="https://www.linkedin.com/in/jesus-molina-roldan-9b3197204/" target="_blank" class="btn-primary px-10 py-4 rounded-xl font-bold text-white uppercase tracking-widest text-xs">LinkedIn</a>
+            <a href="#experience" class="px-10 py-4 rounded-xl font-bold border border-slate-700 hover:bg-slate-800 transition uppercase tracking-widest text-xs">View Journey</a>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-20">
+
+        <section id="experience" class="py-24">
+            <div class="mb-16">
+                <h2 class="text-4xl font-bold text-white mb-2 uppercase tracking-tighter text-left">Professional Experience</h2>
+                <div class="h-1 w-20 bg-sky-500"></div>
+            </div>
+
+            <div class="space-y-10">
+                <div class="glass-card p-10 rounded-3xl">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-8 gap-4 text-left">
+                        <div>
+                            <h3 class="text-2xl font-bold text-white">Embedded Software Engineer</h3>
+                            <p class="text-sky-400 font-medium text-lg italic">Giesecke+Devrient (G+D)</p>
+                        </div>
+                        <div class="px-4 py-2 bg-sky-500/10 text-sky-400 rounded-full text-sm font-bold border border-sky-500/20 uppercase">
+                            Feb 2021 — Present
+                        </div>
+                    </div>
+                    
+                    <div class="grid md:grid-cols-2 gap-10 text-slate-300">
+                        <div class="space-y-4 text-left">
+                            <h4 class="text-sky-500 font-bold uppercase text-xs tracking-widest">Systems Design & Development</h4>
+                            <ul class="space-y-3 text-sm">
+                                <li class="flex items-start gap-2 italic"><i class="fas fa-microchip text-sky-500 mt-1"></i> <span>Software design, architecture and development for embedded systems.</span></li>
+                                <li class="flex items-start gap-2 italic"><i class="fas fa-layer-group text-sky-500 mt-1"></i> <span>Platform design, product evolution and environment configuration.</span></li>
+                                <li class="flex items-start gap-2 italic"><i class="fas fa-code-branch text-sky-500 mt-1"></i> <span><b>CI automation</b> with Jenkins for firmware validation and builds.</span></li>
+                            </ul>
+                        </div>
+                        <div class="space-y-4 text-left">
+                            <h4 class="text-sky-500 font-bold uppercase text-xs tracking-widest">Methodology & Requirements</h4>
+                            <ul class="space-y-3 text-sm">
+                                <li class="flex items-start gap-2 italic"><i class="fas fa-file-contract text-sky-500 mt-1"></i> <span>Following and interpreting technical specifications for product functionality.</span></li>
+                                <li class="flex items-start gap-2 italic"><i class="fas fa-users text-sky-500 mt-1"></i> <span>Working with customer requirements and providing direct technical support.</span></li>
+                                <li class="flex items-start gap-2 italic"><i class="fas fa-sync text-sky-500 mt-1"></i> <span>Efficient teamwork following <b>Agile</b> methodologies (SCRUM/KANBAN).</span></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mt-10 flex flex-wrap gap-3">
+                        <span class="tech-pill px-4 py-1 rounded-full text-xs font-semibold uppercase">Embedded C</span>
+                        <span class="tech-pill px-4 py-1 rounded-full text-xs font-semibold uppercase">Jenkins CI</span>
+                        <span class="tech-pill px-4 py-1 rounded-full text-xs font-semibold uppercase">Software Architecture</span>
+                        <span class="tech-pill px-4 py-1 rounded-full text-xs font-semibold uppercase">Agile</span>
+                        <span class="tech-pill px-4 py-1 rounded-full text-xs font-semibold uppercase">Git</span>
+                    </div>
+                </div>
+
+                <div class="glass-card p-10 rounded-3xl opacity-80">
+                    <div class="flex flex-col md:flex-row justify-between items-start mb-6 text-left">
+                        <div>
+                            <h3 class="text-xl font-bold text-white">Full Stack Developer (Intern)</h3>
+                            <p class="text-slate-400 font-medium">Everis | Mutua de Propietarios</p>
+                        </div>
+                        <p class="text-slate-500 font-bold text-sm uppercase">2019 — 2020</p>
+                    </div>
+                    <p class="text-slate-300 text-sm leading-relaxed mb-6 text-left">
+                        Developed web applications for internal management using <b>SQL</b>, <b>Java Servlets</b>, and <b>Frontend (JS/CSS)</b>.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid md:grid-cols-3 gap-8 border-t border-slate-900 py-24">
+            <div class="md:col-span-2 space-y-12">
+                <h2 class="text-4xl font-bold text-white mb-10 uppercase text-left">Education</h2>
+                <div class="glass-card p-8 rounded-2xl text-left">
+                    <h3 class="text-xl font-bold text-white mb-2">UPC - BarcelonaTech</h3>
+                    <p class="text-sky-400 font-medium italic">BSc in Informatics Engineering</p>
+                    <p class="text-slate-500 text-xs mt-4 uppercase tracking-widest">Specialization: Computing & Systems</p>
+                </div>
+                <div class="glass-card p-8 rounded-2xl text-left">
+                    <h3 class="text-xl font-bold text-white mb-2">Maristes Champagnat Badalona</h3>
+                    <p class="text-slate-400 font-medium italic">Technological Baccalaureate</p>
+                </div>
+            </div>
+
+            <div class="space-y-12">
+                <h2 class="text-4xl font-bold text-white mb-10 uppercase text-left">Languages</h2>
+                <div class="glass-card p-8 rounded-2xl text-left h-full">
+                    <ul class="space-y-6">
+                        <li>
+                            <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">Spanish / Catalan</p>
+                            <p class="text-lg font-bold text-white">Native</p>
+                        </li>
+                        <li>
+                            <p class="text-xs font-bold text-slate-500 uppercase tracking-widest mb-1">English</p>
+                            <p class="text-lg font-bold text-white">Professional Working Proficiency</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <section id="contact" class="py-24 border-t border-slate-900">
+            <div class="glass-card p-12 rounded-[40px] text-center border-sky-500/20">
+                <h2 class="text-5xl font-bold text-white mb-12 uppercase italic">Contact</h2>
+                
+                <div class="flex flex-col items-center gap-10">
+                    <div class="group">
+                        <p class="text-xs text-slate-500 uppercase tracking-widest mb-2">Professional Email</p>
+                        <a href="mailto:jmr_sultan@hotmail.com" class="text-2xl md:text-3xl font-bold text-sky-400 hover:text-white transition break-all">
+                            jmr_sultan@hotmail.com
+                        </a>
+                    </div>
+
+                    <div class="group">
+                        <p class="text-xs text-slate-500 uppercase tracking-widest mb-4">Professional Networking</p>
+                        <a href="https://www.linkedin.com/in/jesus-molina-roldan-9b3197204/" target="_blank" class="inline-flex items-center gap-3 px-8 py-4 bg-[#0077b5] text-white rounded-xl font-bold hover:scale-105 transition-all shadow-xl">
+                            <i class="fab fa-linkedin text-xl"></i>
+                            Connect on LinkedIn
+                        </a>
+                    </div>
+
+                    <div class="h-px w-20 bg-slate-800"></div>
+                    <p class="text-slate-500 uppercase tracking-[0.3em] text-[10px]">Barcelona, Spain</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-10 text-center text-slate-700 text-[10px] font-bold tracking-[0.4em] uppercase">
+        Jesús Molina Roldán — 2026
+    </footer>
+
+</body>
+</html>
