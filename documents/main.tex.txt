@@ -1,0 +1,88 @@
+\documentclass[11pt,a4paper,sans]{article}
+
+% --- Paquetes de Formato ---
+\usepackage[utf8]{inputenc}
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{xcolor}
+
+% --- Configuración de Colores y Enlaces ---
+\definecolor{primary}{RGB}{30, 64, 175}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=primary,
+    filecolor=magenta,      
+    urlcolor=primary,
+}
+
+% --- Formato de Secciones ---
+\titleformat{\section}{\large\bfseries\uppercase}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{12pt}{8pt}
+
+\begin{document}
+
+% --- Encabezado ---
+\begin{center}
+    {\Huge \textbf{Jesús Molina Roldán}} \\ \vspace{4pt}
+    \small 
+    Barcelona, Spain $|$ 
+    \href{mailto:jesus.molina.roldan@gmail.com}{jesus.molina.roldan@gmail.com} $|$ 
+    \href{https://linkedin.com/in/jesusmolinaroldan}{linkedin.com/in/jesusmolinaroldan} $|$
+    \href{https://jesusmolinaroldan.github.io/}{jesusmolinaroldan.github.io}
+\end{center}
+
+% --- Perfil Profesional ---
+\section{Summary}
+Embedded Software Engineer with experience in systems architecture, platform evolution, and CI automation. Specialist in low-level development for high-security environments, focused on creating robust firmware and optimizing hardware-constrained systems.
+
+% --- Experiencia Profesional ---
+\section{Experience}
+
+\textbf{Giesecke+Devrient (G+D)} \hfill Feb 2021 -- Present \\
+\textit{Embedded Software Engineer} \hfill Barcelona, Spain
+\begin{itemize}[noitemsep, topsep=2pt]
+    \item Software design, architecture, and development for critical embedded systems.
+    \item Platform design, product evolution, and environment configuration for high-security products.
+    \item Implementation of \textbf{CI automation} using Jenkins for firmware validation and automated builds.
+    \item Analysis and interpretation of technical specifications to ensure product functionality and security.
+    \item Collaboration with international customers to provide direct technical support and requirement analysis.
+    \item Working under \textbf{Agile} methodologies (SCRUM) in multi-disciplinary teams.
+\end{itemize}
+
+\vspace{6pt}
+
+\textbf{Everis | Mutua de Propietarios} \hfill 2019 -- 2020 \\
+\textit{Full Stack Developer (Intern)} \hfill Barcelona, Spain
+\begin{itemize}[noitemsep, topsep=2pt]
+    \item Developed web applications for internal management using \textbf{Java Servlets} and \textbf{SQL}.
+    \item Implemented frontend solutions using JavaScript and CSS to improve internal workflows.
+\end{itemize}
+
+% --- Educación ---
+\section{Education}
+
+\textbf{Universitat Politècnica de Catalunya (UPC)} \hfill 2016 -- 2021 \\
+\textit{BSc in Informatics Engineering} \\
+Specialization: Computing and Systems.
+
+\textbf{Maristes Champagnat Badalona} \\
+\textit{Technological Baccalaureate}
+
+% --- Aptitudes Técnicas ---
+\section{Skills}
+\begin{itemize}[label={}, leftmargin=0pt, noitemsep]
+    \item \textbf{Languages:} Embedded C, C++, Python, Java, SQL, Assembler.
+    \item \textbf{Embedded \& Tools:} Software Architecture, RTOS, Jenkins (CI/CD), Git, Linux, Microcontrollers.
+    \item \textbf{Methodologies:} Agile (SCRUM, Kanban).
+\end{itemize}
+
+% --- Idiomas ---
+\section{Languages}
+\begin{itemize}[label={}, leftmargin=0pt, noitemsep]
+    \item \textbf{Spanish / Catalan:} Native.
+    \item \textbf{English:} Professional Working Proficiency.
+\end{itemize}
+
+\end{document}
