@@ -35,7 +35,7 @@
 
 % --- Perfil Profesional ---
 \section{Summary}
-Embedded Software Engineer with experience in systems architecture, platform evolution, and CI automation. Specialist in low-level development for high-security environments, focused on creating robust firmware and optimizing hardware-constrained systems.
+Software Engineer with experience in systems architecture, platform evolution, and CI automation.
 
 % --- Experiencia Profesional ---
 \section{Experience}
